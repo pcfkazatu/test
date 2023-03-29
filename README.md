@@ -1,3 +1,4 @@
+```Bash
 create cicd.sh
 
 echo "Update files"
@@ -8,3 +9,4 @@ echo " "
 
 crontab -e
 0 4 * * * ~/Desktop/CICD/cicd.sh >> ~/Desktop/CICD/cicd_log
+```
