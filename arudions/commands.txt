@@ -1,3 +1,8 @@
+dmesg | grep tty
+
+udevadm info --name=/dev/ttyACM0 --attribute-walk
+
+
 ACM01 
 Dist
     ATTRS{serial}=="75835333933351613282"
