@@ -1,0 +1,16 @@
+ACM01 
+Dist
+    ATTRS{serial}=="75835333933351613282"
+
+ACM00 
+HX
+    ATTRS{serial}=="757353030313515002E1"
+
+sudo nano /etc/udev/rules.d/10-usb-serial.rules
+
+
+SUBSYSTEM=="tty", ATTRS{serial}=="75835333933351613282", SYMLINK+="ttyUSB_Dist"
+SUBSYSTEM=="tty", ATTRS{serial}=="757353030313515002E1", SYMLINK+="ttyUSB_HX"
+
+
+sudo udevadm trigger
